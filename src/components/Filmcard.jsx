@@ -16,8 +16,11 @@ const Filmcard = ({ name, nameAct, image, description }) => {
   );
 };
 
-// Card.propTypes = {
-//   data: PropTypes.array.isRequired,
-// };
+Filmcard.propTypes = {
+  name: PropTypes.string,
+  nameAct: PropTypes.string,
+  image: PropTypes.string,
+  description: PropTypes.string,
+};
 
 export default Filmcard;

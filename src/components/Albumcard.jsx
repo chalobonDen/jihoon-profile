@@ -15,8 +15,10 @@ const Albumcard = ({ name, type, image }) => {
   );
 };
 
-// Card.propTypes = {
-//   data: PropTypes.array.isRequired,
-// };
+Albumcard.propTypes = {
+  name: PropTypes.string,
+  type: PropTypes.string,
+  image: PropTypes.string,
+};
 
 export default Albumcard;

@@ -32,13 +32,6 @@ const discographyData = [
     type: 'Full Album 1',
     image: message,
   },
-  //   {
-  //     id: 5,
-  //     name: `COLLECTION`,
-  //     type: 'Mini Album 4',
-  //     image:''
-  //   },
-  ,
 ];
 
 const Discography = () => {
