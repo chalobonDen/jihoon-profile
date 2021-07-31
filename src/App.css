@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+.BG-img {
+  background-image: url('./image/pjh5.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: 0% 5%;
+}
+/* .BG-img img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center -300px;
+} */
+
+@media (max-width: 800px) {
+  .BG-img img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+  }
+  .BG-img {
+    background-image: url('./image/pjh4.png');
+  }
+}
+
+@media (max-width: 480px) {
+  .BG-img {
+    background-image: url('./image/pjh4.png');
+    background-position: center center;
+  }
+}
+
+/* Filmcard */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
+.items {
+  width: 360px;
+  margin: 2rem auto;
+  height: 560px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.img-con img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.info-con {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.info-con p {
+  color: #7e7e7e;
+}
+
+.info-con h1 {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.info-con h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .items {
+    width: 300px;
+    height: auto;
+  }
+}
+
+/* Albumcard */
+
+.album > div > img {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
