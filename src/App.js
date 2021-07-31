@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from '../src/pages/Home';
 import Filmography from './pages/Filmography';
 import Discography from './pages/Discography';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           </Route>
         </Switch>
       </Router>
+
+      <Footer />
     </div>
   );
 }
