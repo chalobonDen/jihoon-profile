@@ -36,7 +36,7 @@
 @media (max-width: 480px) {
   .BG-img {
     background-image: url('./image/pjh4.png');
-    background-position: center center;
+    background-position: top top;
   }
 }
 
@@ -47,7 +47,15 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
 }
-
+.items:nth-child(1) {
+  order: 3;
+}
+.items:nth-child(2) {
+  order: 2;
+}
+.items:nth-child(3) {
+  order: 1;
+}
 @media (max-width: 1024px) {
   .container {
     display: grid;
@@ -107,7 +115,18 @@
 }
 
 /* Albumcard */
-
 .album > div > img {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.album:nth-child(1) {
+  order: 4;
+}
+.album:nth-child(2) {
+  order: 3;
+}
+.album:nth-child(3) {
+  order: 2;
+}
+.album:nth-child(4) {
+  order: 1;
 }

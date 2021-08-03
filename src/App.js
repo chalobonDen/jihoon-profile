@@ -5,6 +5,7 @@ import Home from '../src/pages/Home';
 import Filmography from './pages/Filmography';
 import Discography from './pages/Discography';
 import Footer from './components/Footer';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/profile">
+            <Profile />
           </Route>
           <Route path="/filmography">
             <Filmography />
