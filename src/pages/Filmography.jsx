@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../css/styles.css';
 import film from '../image/film.jpg';
 import film1 from '../image/film/film1.jpg';
