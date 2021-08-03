@@ -67,9 +67,23 @@ const Navbar = () => {
                 borderBottom: '3px solid #362312',
                 lineHeight: '20px',
               }}
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-gray-600 text-white mr-4 text-gray-600"
+              className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white text-white mr-4 text-gray-600"
             >
               HOME
+            </NavLink>
+
+            <NavLink
+              to="/profile"
+              activeStyle={{
+                color: '#362312',
+                fontWeight: 700,
+                paddingBottom: '3px',
+                borderBottom: '3px solid #362312',
+                lineHeight: '20px',
+              }}
+              className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-gray-600"
+            >
+              PROFILE
             </NavLink>
 
             <NavLink
@@ -97,19 +111,6 @@ const Navbar = () => {
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-gray-600"
             >
               FILMOGRAPHY
-            </NavLink>
-            <NavLink
-              to="/gallery"
-              activeStyle={{
-                color: '#362312',
-                fontWeight: 700,
-                paddingBottom: '3px',
-                borderBottom: '3px solid #362312',
-                lineHeight: '20px',
-              }}
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-gray-600"
-            >
-              GALLERY
             </NavLink>
           </nav>
         </div>
