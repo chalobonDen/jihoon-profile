@@ -6,7 +6,7 @@ import '../App.css';
 const Footer = () => {
   return (
     <div className="fixed left-0 bottom-0 bg-gray-300 bg-opacity-40 text-white text-center w-full">
-      <div className="h-14 flex xl:justify-end justify-center items-center text-gray-500 xl:mr-20">
+      <div className="h-14 flex lg:justify-end justify-center items-center text-gray-500 lg:mr-20">
         <a href="https://twitter.com/Park_Jihoon_twt">
           <FaTwitter className="mr-5 hover:text-white" />
         </a>
