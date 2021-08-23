@@ -7,6 +7,10 @@ import oclock from '../image/album/oclock.jpg';
 import mini2 from '../image/album/mini2.jpg';
 import thew from '../image/album/thew.jpg';
 import message from '../image/album/message.png';
+import mycollection from '../image/album/mycollection.jpg';
+import midnight from '../image/album/midnight.jpeg';
+import calluup from '../image/album/calluup.jpg';
+import talktome from '../image/album/talktome.jpg';
 const discographyData = [
   {
     id: 1,
@@ -28,9 +32,33 @@ const discographyData = [
   },
   {
     id: 4,
+    name: `Midnight`,
+    type: 'OST Love Revolution',
+    image: midnight,
+  },
+  {
+    id: 5,
     name: `MESSAGE`,
     type: 'Full Album 1',
     image: message,
+  },
+  {
+    id: 6,
+    name: `Call U Up`,
+    type: 'Universe Application',
+    image: calluup,
+  },
+  {
+    id: 7,
+    name: `Take To me`,
+    type: 'OST At a distance, spring is green ',
+    image: talktome,
+  },
+  {
+    id: 8,
+    name: `My Collection`,
+    type: 'Mini Album 4',
+    image: mycollection,
   },
 ];
 
