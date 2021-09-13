@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Divide as Hamburger } from 'hamburger-react';
 
 const Navbar = () => {
   const [manuDropdown, setManuDropdown] = useState(false);
@@ -35,16 +36,9 @@ const Navbar = () => {
       <div className="block lg:hidden">
         <button
           onClick={navToggler}
-          className="flex items-center px-3 py-2 rounded text-teal-lighter border-teal-light hover:text-white hover:border-white"
+          className="flex items-center rounded text-teal-lighter border-teal-light hover:text-white hover:border-white"
         >
-          <svg
-            className="h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
+          <Hamburger size={20} color="#817aa0" />
         </button>
       </div>
 
@@ -61,10 +55,10 @@ const Navbar = () => {
               exact
               to="/"
               activeStyle={{
-                color: '#362312',
+                color: '#817aa0',
                 fontWeight: 700,
                 paddingBottom: '3px',
-                borderBottom: '3px solid #362312',
+                borderBottom: '3px solid #817aa0',
                 lineHeight: '20px',
               }}
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white text-white mr-4 text-gray-600"
@@ -75,10 +69,10 @@ const Navbar = () => {
             <NavLink
               to="/profile"
               activeStyle={{
-                color: '#362312',
+                color: '#817aa0',
                 fontWeight: 700,
                 paddingBottom: '3px',
-                borderBottom: '3px solid #362312',
+                borderBottom: '3px solid #817aa0',
                 lineHeight: '20px',
               }}
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-gray-600"
@@ -89,10 +83,10 @@ const Navbar = () => {
             <NavLink
               to="/discography"
               activeStyle={{
-                color: '#362312',
+                color: '#817aa0',
                 fontWeight: 700,
                 paddingBottom: '3px',
-                borderBottom: '3px solid #362312',
+                borderBottom: '3px solid #817aa0',
                 lineHeight: '20px',
               }}
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-gray-600"
@@ -102,10 +96,10 @@ const Navbar = () => {
             <NavLink
               to="/filmography"
               activeStyle={{
-                color: '#362312',
+                color: '#817aa0',
                 fontWeight: 700,
                 paddingBottom: '3px',
-                borderBottom: '3px solid #362312',
+                borderBottom: '3px solid #817aa0',
                 lineHeight: '20px',
               }}
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-gray-600"
